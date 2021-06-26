@@ -1,0 +1,269 @@
+
+/* Global */
+body {
+    font: 15px/1.5 "Roboto", sans-serif;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .hide-on-sm {
+    display: none;
+  }
+  
+  .hide-on-lg {
+    display: block;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  /* Header */
+  header {
+    background: #f4f4f4;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 0.8rem 0;
+  }
+  
+  header .header-content h1 {
+    font-size: 25px;
+  }
+  
+  header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Nav */
+  .hamburger > div {
+    width: 22px;
+    height: 3px;
+    margin: 0 0 0.2rem;
+    background: #000;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+  
+  .show .hamburger > div:nth-child(1) {
+    transform: translate(2px, 4px) rotate(45deg);
+  }
+  
+  .show .hamburger > div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .show .hamburger > div:nth-child(3) {
+    transform: translate(1px, -8px) rotate(-45deg);
+  }
+  
+  nav.nav {
+    display: block !important;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    transition: height 0.4s ease;
+  }
+  
+  nav.nav ul.nav-items {
+    margin: 2rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav.nav ul.nav-items li {
+    padding: 0 0 1rem;
+  }
+  
+  .show nav.nav {
+    height: 100%;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 5rem;
+    background: #f4f4f4;
+    padding: 1rem 0;
+  }
+  
+  .footer-content {
+    text-align: center;
+  }
+  
+  .footer-content h2 {
+    margin: 0 0 2rem;
+  }
+  
+  .footer-content .footer-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .footer-content .footer-tabs ul {
+    margin: 0.5rem 0;
+  }
+  .footer-content .footer-tabs ul li {
+    padding-bottom: 0.7rem;
+  }
+  
+  .footer-content .footer-tabs ul li.socials-title {
+    font-weight: bold;
+  }
+  
+  .footer-terms {
+    text-align: center;
+    padding: 1rem 0;
+    background: #fff;
+  }
+  
+  .footer-terms ul {
+    margin: 2rem 0;
+  }
+  
+  .footer-terms li {
+    display: inline;
+  }
+  
+  .footer-terms li:nth-child(2) {
+    padding: 0 2rem;
+  }
+  /* Media Queries */
+  @media screen and (min-width: 500px) {
+    .container {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (min-width: 700px) {
+    .hide-on-lg {
+      display: none;
+    }
+    .hide-on-sm {
+      display: block;
+    }
+    nav.nav {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: unset;
+      background: none;
+      transition: none;
+    }
+  
+    nav.nav ul.nav-items {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+  
+    nav.nav ul.nav-items li {
+      padding: 0 0 0 0.7rem;
+      display: inline;
+    }
+  
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .footer-content h2 {
+      justify-self: flex-start;
+      align-self: center;
+      margin: 0;
+    }
+  
+    .footer-content .footer-tabs {
+      flex-wrap: nowrap;
+    }
+  
+    .footer-content .footer-tabs ul {
+      padding: 0 0 0 2rem;
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .container {
+      width: 900px;
+    }
+  
+    nav.nav ul.nav-items li {
+      padding: 0 0 0 2rem;
+    }
+  
+    .footer-content .footer-tabs ul {
+      padding: 0 0 0 3rem;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1000px;
+
+    }
+    
+    .footer-content .footer-tabs ul {
+      padding: 0 0 0 5rem;
+    }
+  }
+  
+
+
+    hr{
+        width: 65px;
+        height: 5px;
+        background-color: black;
+    }
+    #content p{
+        text-align:justify;
+        margin-top:50px;
+        font-size: 20px;
+    }
+
+    #content li{
+        list-style: display;
+        text-align: justify;
+        margin-top: 20px;
+    }
+
+    #content a{
+        color: blue;
+    }
