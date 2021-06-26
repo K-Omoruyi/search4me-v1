@@ -148,7 +148,7 @@ footer {
 .footer-terms {
   text-align: center;
   padding: 1rem 0;
-  background: #fff;
+  background: rgba(214, 242, 255, 0.3);
 }
 
 .footer-terms ul {
