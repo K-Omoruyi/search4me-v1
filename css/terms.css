@@ -163,6 +163,11 @@ body {
   .footer-terms li:nth-child(2) {
     padding: 0 2rem;
   }
+
+aside{
+  background: rgba(214, 242, 255, 0.3);
+}
+
   /* Media Queries */
   @media screen and (min-width: 500px) {
     .container {
